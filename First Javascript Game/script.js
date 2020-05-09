@@ -105,7 +105,8 @@
 				window.requestAnimationFrame(gamePlay);
 				// console.log(player.score++);
 				player.score++;
-				score.innerText="Score:"+player.score;
+				let ps=player.score-1;
+				score.innerText="Score:"+ps;
 			}
 		}
 
