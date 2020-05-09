@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js Game Dev</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			font-family: sans-serif;
+		}
+		.hide{
+			display: none;
+		}
+		.car {
+			width: 50px; height: 90px;
+			position: absolute;
+			
+			bottom: 120px;
+			position: absolute;
+			background-image: url('car2.png');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+
+		}	
+		.enemy{
+			width: 90px; height: 58px;
+			position: absolute;
+			
+			bottom: 120px;
+			
+			background-image: url(redcar.png);
+			transform: rotate(270deg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+
+		.lines{
+			width: 10px;
+			height: 115px;
+			background: white;
+			position: absolute;
+			margin-left: 195px;
+		}
+		.gameArea{
+
+			width: 400px;
+			height: 100vh;
+			background: #2d3436;
+			margin: auto;
+			position: relative;
+			overflow: hidden;
+
+		}
+
+		.carGame{
+
+			width: 100%;
+			height: 100vh;
+			background-image: url('car.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+
+		.score{
+			position: absolute;
+			top: 15px;
+			left: 40px;
+			background: green;
+			width: 350px;
+
+			height: 70px;
+			color: white;
+			text-align: center;
+			font-size: 1.5em;
+			box-shadow: 0 5px 5px #777;
+			line-height: 60px;
+		}
+		.startScreen{
+			position: absolute;
+			background-color: #ee5253;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+			text-align: center;
+			border: 1px solid #000;
+			padding: 15px;
+			margin: auto;
+			width: 50%;
+			cursor: pointer;
+			letter-spacing: 5;
+			font-size: 20px;
+			word-spacing: 4;
+			line-height: 30px;
+			text-transform: uppercase;
+			box-shadow: 0 5px 5px #777; 
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<div class="carGame">
+		<div class="score"></div>
+
+		<div class="startScreen">
+		
+			<p>Click here to start the Game</p>
+		
+		</div>
+
+		<div class="gameArea"></div>
+	
+
+	
+	
+	</div>
+	 <script  src="script.js"></script>
+</body>
+</html>
