@@ -107,8 +107,42 @@
 				player.score++;
 				let ps=player.score-1;
 				score.innerText="Score:"+ps;
+
+
+
+
+						
+
+
+
+
 			}
 		}
+
+			function speedTime()
+			{
+									var seconds = 0;
+
+					function incrementSeconds() {
+					    seconds += 1;
+									    if(seconds==10){
+											player.speed=player.speed+1;
+										}	
+										if(seconds==20){
+											player.speed=player.speed+1;
+										}
+
+											if(seconds==30){
+											player.speed=player.speed+1;
+										}	if(seconds==37){
+											player.speed=player.speed+1;
+										}	
+
+					}
+
+					var cancel = setInterval(incrementSeconds, 1000);
+								
+						}
 
 		function start(){
 
@@ -117,6 +151,10 @@
 			startScreen.classList.add("hide");
 			player.start=true;
 			player.score=0;
+			player.speed=7;
+
+			speedTime();
+
 
 			for(i=0;i<6;i++)
 			{
