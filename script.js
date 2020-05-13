@@ -95,7 +95,7 @@
 				if(keys.ArrowLeft && player.x>0){
 					player.x-=player.speed
 				}
-				if(keys.ArrowRight  &&player.x<(road.width-50)){
+				if(keys.ArrowRight  &&player.x<(road.width-54)){
 					player.x+=player.speed
 				}
 
